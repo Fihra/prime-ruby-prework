@@ -6,7 +6,7 @@ def prime?(integer)
       for divisors in (2..integer) do
           if integer%divisors == 0
             return true
-          elsif integer%divisors != 0
+          else
             return false
           end
       end
