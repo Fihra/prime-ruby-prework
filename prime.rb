@@ -7,8 +7,7 @@ def prime?(integer)
           if integer%divisors == 0
             return false
           end
+      return true
       end
-
     end
-    return true
 end
