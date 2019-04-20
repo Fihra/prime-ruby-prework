@@ -5,11 +5,9 @@ def prime?(integer)
     else
       for divisors in (2..integer) do
           if integer%divisors == 0
-            return false
-          else
-            break
+            return true
           end
       end
-      return true
+      return false
     end
 end
