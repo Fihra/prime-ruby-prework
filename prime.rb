@@ -9,4 +9,5 @@ def prime?(integer)
       end
     end
     return true
+  end
 end
