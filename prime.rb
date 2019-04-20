@@ -4,4 +4,5 @@ def prime?(integer)
     return false
   else
     (2..integer-1).none? {|divisor| integer%divisor == 0}
+  end
 end
