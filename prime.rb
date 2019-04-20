@@ -3,6 +3,10 @@ def prime?(integer)
   if integer < 1
     return false
   else
-    (2..integer-1).none? {|divisor| integer%divisor == 0}
-  end
+    for divisor in 2..(integer - 1)
+      if integer%divisor == 0
+        return false
+      end
+    end
+    return true
 end
